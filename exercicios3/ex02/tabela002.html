@@ -17,14 +17,23 @@
             }
             table{
                 border-collapse: collapse;
+                position: relative;
             }
             thead, tfoot{
                 background-color: gray;
                 color:white;
             }
+            thead > tr > th{
+                position: sticky;
+                top: -1px;
+                background-color: rgb(53, 48, 48);
+            }
             td, th{
                 border: 1px solid black;
                 padding: 10px;
+            }
+            tbody >tr:nth-child(2n){
+                background-color:lightgray;
             }
             td.num{
                 text-align: right;
